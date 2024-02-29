@@ -1,0 +1,55 @@
+body{
+    background: #f2f0EB; 
+    color: #4d4a4a;
+    font-family: "Oswald", sans-serif;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3.5pt;
+}
+
+header hr {
+    height: 3.5px;
+    width: 350px;
+    border-width:0;
+    color: #4d4a4a;
+    background-color: #4d4a4a;
+}
+  
+h3 {
+    text-align: left;
+}
+
+.projetos {
+    display: flex;
+    background-color: #e4e2de;
+    padding: 25px;
+}
+.projetosPar {
+    display: flex;
+    background-color: #e4e2de;
+}
+.txtprojetos {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.fundo{
+    height: 1.5px;
+    border-width:0;
+    color: #f2f0EB;
+    background-color: #f2f0EB;
+}
+  
+img {
+    height: auto;
+    width: 35%;
+    border: #e4e2de;
+    border-style: solid;
+    border-width: 1px;
+}
