@@ -1,4 +1,4 @@
-const { createApp } = Vue
+import { createApp } from 'vue'
 
 createApp({
 
@@ -19,7 +19,6 @@ createApp({
     clearAll: function() {
       this.listaDeTarefas = []
     }
-    
   }
 
-}).mount('#todoApp')
+}).mount('#app')
