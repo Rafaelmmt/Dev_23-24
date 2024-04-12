@@ -1,55 +1,101 @@
-body{
-    background: #f2f0EB; 
-    color: #4d4a4a;
+body {
+    background-color: #e0e1dd;
     font-family: "Oswald", sans-serif;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #415a77;
+    width: 960px;
+    margin: 30px auto;
 }
 
-header{
-    font-size: 20pt;
-    font-weight: bold;
+header {
     text-align: center;
-    letter-spacing: 3.5pt;
 }
 
-header hr {
-    height: 3.5px;
-    width: 350px;
-    border-width:0;
-    color: #4d4a4a;
-    background-color: #4d4a4a;
-}
-  
-h3 {
-    text-align: left;
+header a {
+    color: #415a77;
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 6px 30px;
+    border-bottom: 1px solid #415a77;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.projetos {
+.container-cours {
     display: flex;
-    background-color: #e4e2de;
-    padding: 25px;
+    justify-content: space-between;
 }
-.projetosPar {
+
+.courses h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 45px 6px 6px 6px;
+}
+
+.courses p {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    margin: 0 0 30px 0;
+}
+
+.courses i {
+    margin: 0 9px 0 6px;
+}
+
+.courses span{
+    font-size: 12px;
+    margin: 0 6px 0 9px;
+}
+
+.icon-size {
+    font-size: 15px;
+    margin: 76px 12px 61px 0;
+}
+
+hr {
+    margin: 6px 0px;
+}
+
+.container-proj {
     display: flex;
-    background-color: #e4e2de;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfd1cc;
+    margin-bottom: 6px;
 }
-.txtprojetos {
-    display: flex;
-    flex-direction: column-reverse;
+
+.projects h1 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 6px 24px 6px 24px;
 }
-.fundo{
-    height: 1.5px;
-    border-width:0;
-    color: #f2f0EB;
-    background-color: #f2f0EB;
+
+.projects p {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+    margin: 12px 12px 12px 24px;
 }
-  
+
 img {
-    height: auto;
-    width: 35%;
-    border: #e4e2de;
-    border-style: solid;
-    border-width: 1px;
+    height: 225px;
+    width: 375px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 21px 30px;
+}
+
+
+
+
+
+
+
+
+/* TABLET */
+@media screen and (max-width: 1056px) {
+    body {
+        width: 90%;
+    }
+
 }

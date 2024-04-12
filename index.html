@@ -2,71 +2,117 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>DEV 23-24</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5adf2a6df3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
-
-    <header>
-        Cursos DEV 23-24
-        <hr>
-    </header>
     
-    <div>
-        <p>Udemy: Cursos online - aprenda o que quiser, quando quiser</p>
-        <h3>Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h3>
-        <p>Instrutor: Ivan Lourenço Gomes | Certificado de conclusão do curso</p>
-        <hr>
-        <p>Udemy: Cursos online - aprenda o que quiser, quando quiser</p>
-        <h3>Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h3>
-        <p>Instrutor: Ivan Lourenço Gomes | Certificado de conclusão do curso</p>
-        <hr>
+    <main id="todoApp">
+
+        <header>
+            <a href="index.html">Cursos 23-24</a>
+        </header>
+
+        <!-- CURSO 01 -->    
+        <div class="container-cours">
+            <div class="courses">
+                <h1>Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h1>
+                <p>
+                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com<span>|</span>
+                    <i class="fa-solid fa-chalkboard-user"></i>Ivan Lourenço Gomes<span>|</span>
+                    <i class="fa-solid fa-certificate"></i>Certificado
+                </p> 
+            </div>
+            <i v-if="!openC01" class="fa-solid fa-plus icon-size" @click="openC01 = !openC01, openC02 = false"></i>
+            <i v-else class="fa-solid fa-minus icon-size" @click="openC01 = !openC01, openC02 = false"></i>
+        </div><hr>
         
-        <div class="projetos">
-            <div class="txt-projetos">
-                <h4>Projeto 01</h6>
-                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h6>
+        <!-- Projetos do CURSO 01 -->  
+        <div v-if="openC01">
+            
+            <!-- Projeto 01 -->
+            <div class="container-proj">
+                <div class="projects">
+                    <h1>Projeto 01: HTML e CSS</h1>
+                    <p>
+                        Projeto simulando a página principal do site de uma loja de produtos tecnológicos. HTML com elementos semânticos e CSS responsivo.
+                    </p>                
+                </div>
+                <a href="/projects/C01_Prj02/index.html">
+                    <img class="id23" src="media/gimp/C01_Prj02.png" alt="Site HTML + CSS">
+                </a>
             </div>
-            <img src="media/gimp/C01_Prj01.png" alt="">
-        </div>
-        <hr class="fundo">
-        <div class="projetosPar">
-            <div class="txt-projetos">
-                <h4>Projeto 01</h6>
-                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h6>
+            <!-- Projeto 02 -->
+            <div class="container-proj">
+                <div class="projects">
+                    <h1>Projeto 02: HTML, CSS e Javascript</h1>
+                    <p>
+                        Projeto de site com elementos interativos utilizando JavaScript.
+                    </p>                
+                </div>
+                <a href="/projects/C01_Prj03/index.html">
+                    <img src="media/gimp/C01_Prj03.png" alt="Site HTML + CSS + JS">
+                </a>
             </div>
-            <img src="media/Captura de tela 2024-02-28 001321.png" alt="">
-        </div>
-        <hr class="fundo">
-        <div class="projetos">
-            <div class="txt-projetos">
-                <h4>Projeto 01</h6>
-                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h6>
+            <!-- Projeto 03 -->
+            <div class="container-proj">
+                <div class="projects">
+                    <h1>Projeto 03: introdução ao VueJS</h1>
+                    <p>
+                        Projeto simulando um aplicativo de autoatendimento em lanchonete. Com apresentação dinâmica de produtos, 
+                        adição e remoção de produtos ao pedido e soma dos valores totais do pedido.
+                    </p>                
+                </div>
+                <a href="/projects/C01_Prj04/index.html">
+                    <img src="media/gimp/C01_Prj04.png" alt="Aplicação VueJS">
+                </a>
             </div>
-            <img src="media/C01_Prj04.png" alt="">
-            <a href="projects/C01_Prj04/index.html">teste</a>
-            <a href="projects/C01_Prj03/index.html">teste2</a>
-        </div>
+            <!-- Projeto 04 -->
+            <div class="container-proj">
+                <div class="projects">
+                    <h1>Projeto 04: VueJS - Input do Usuário e o Two-way Data Binding</h1>
+                    <p>
+                        Aplicação simples com input do usuário e apresentação da informação.
+                    </p>                
+                </div>
+                <a href="/projects/C01_Prj05/index.html">
+                    <img src="media/gimp/C01_Prj05.png" alt="Aplicação VueJS">
+                </a>
+            </div>
         
-    </div>
-    <div>
-        <h3>Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h3>
-    </div><hr>
-    <div>
-        <h3>Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h3>
-    </div><hr>
+        </div>
+
+        <!-- CURSO 02 -->
+        <div class="container-cours">
+            <div class="courses">
+                <h1>Formação programador frontend - VueJS</h1>
+                <p>
+                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com<span>|</span>
+                    <i class="fa-solid fa-chalkboard-user"></i>Daniel Lopes<span>|</span>
+                    <i class="fa-solid fa-certificate"></i>Certificado
+                </p> 
+            </div>
+            <i v-if="!openC02" class="fa-solid fa-plus icon-size" @click="openC02 = !openC02, openC01 = false"></i>
+            <i v-else class="fa-solid fa-minus icon-size" @click="openC02 = !openC02, openC01 = false"></i>
+        </div><hr>
+        <!-- Projetos do CURSO 02 -->
+        <div v-if="openC02">Teste</div>
 
 
+    </main>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script> 
 </body>
-
 </html>
