@@ -1,6 +1,4 @@
-import { createApp } from 'vue'
-
-createApp({
+const todoApp = {
 
   data() {
     return {
@@ -20,5 +18,6 @@ createApp({
       this.listaDeTarefas = []
     }
   }
+};
 
-}).mount('#app')
+Vue.createApp(todoApp).mount('#app');
