@@ -18,28 +18,13 @@
 
 <body>
     
-    <main id="todoApp">
+    <main id="app">
 
         <header>
-            <a href="index.html">Cursos 23-24</a> <h1>{{ testeVue }}</h1>
+            <a href="index.html">Cursos 23-24</a>
         </header>
-        
-        <h1>Todos os Projetos</h1>
-        <ul>
-            <li><a href="/projects/C00_Prj/Index.html">Projeto 00</a></li>
-            <li><a href="/projects/C01_Prj01/index.html">Projeto 01</a></li>
-            <li><a href="/projects/C01_Prj02/index.html">Projeto 02</a></li>
-            <li><a href="/projects/C01_Prj03/index.html">Projeto 03</a></li>
-            <li><a href="/projects/C01_Prj04/index.html">Projeto 04</a></li>
-            <li><a href="/projects/C01_Prj05/index.html">Projeto 05</a></li>
-            <li><a href="/projects/C01_Prj06/index.html">Projeto 06</a></li>
-            <li><a href="https://proj07-vuecli.vercel.app/">Projeto 08</a></li>
-            <li><a href="https://proj08-vuecli.vercel.app/#/">Projeto 09</a></li>
-            <li><a href="https://proj09-vite.vercel.app/">Projeto 10</a></li>
-            <li><a href="https://frasesapp.vercel.app/#/">Projeto 11</a></li>
-        </ul>
 
-        <h1>***** Em construção *****</h1>
+        <h4>*** em construção ***</h4>
 
         <!-- CURSO 01 -->    
         <div class="container-cours">
@@ -95,18 +80,6 @@
                     <img src="media/gimp/C01_Prj04.png" alt="Aplicação VueJS">
                 </a>
             </div>
-            <!-- Projeto 04 -->
-            <div class="container-proj">
-                <div class="projects">
-                    <h1>Projeto 04: VueJS - Input do Usuário e o Two-way Data Binding</h1>
-                    <p>
-                        Aplicação simples com input do usuário e apresentação da informação.
-                    </p>                
-                </div>
-                <a href="/projects/C01_Prj05/index.html">
-                    <img src="media/gimp/C01_Prj05.png" alt="Aplicação VueJS">
-                </a>
-            </div>
         
         </div>
 
@@ -124,9 +97,13 @@
             <i v-else class="fa-solid fa-minus icon-size" @click="openC02 = !openC02, openC01 = false"></i>
         </div><hr>
         <!-- Projetos do CURSO 02 -->
-        <div v-if="openC02">Teste</div>
+        <div v-if="openC02">...</div>
 
-
+        <div class="link-projPg">
+            <i class="fa-solid fa-arrow-right"></i>
+            <a href="pages/Page02/index.html">Todos os Projetos</a>
+        </div>
+        
     </main>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
