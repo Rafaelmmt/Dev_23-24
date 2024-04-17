@@ -8,25 +8,25 @@ createApp({
             projetos: [
                 {
                     "print": "../../media/C01_Prj00.png",
-                    "link":"projects/C01_Prj02/index.html",
+                    "link":"../../projects/C01_Prj02/index.html",
                     "name": "HTML e CSS",
                     "description": "Projeto apresentando conceitos de HTML semântico e design responsivo.",
                 },
                 {
                     "print": "../../media/C01_Prj01.png",
-                    "link":"projects/C01_Prj03/index.html",
+                    "link":"../../projects/C01_Prj03/index.html",
                     "name": "Introdução JS",
                     "description": "Projeto utilizando JavaScript para tornar site dinâmico e interativo.",
                 },
                 {
                     "print": "../../media/C01_Prj02.png",
-                    "link":"projects/C01_Prj04/index.html",
+                    "link":"../../projects/C01_Prj04/index.html",
                     "name": "Introdução VUE JS",
                     "description": "Self Service Machine - Projeto simulando aplicativo de self service de lanchonete.",
                 },
                 {
                     "print": "../../media/C01_Prj03.png",
-                    "link":"projects/C01_Prj06/index.html",
+                    "link":"../../projects/C01_Prj06/index.html",
                     "name": "To Do List",
                     "description": "Projeto realizado em forma de desafio, buscando cumprir as especificações passadas pelo instrutor.",
                 },

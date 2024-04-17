@@ -25,17 +25,16 @@
         </header>
 
         <!-- CURSO 01 -->
-        <div class="container-cours">
+        <div class="container-courses">
             <div class="courses">
-                <h1>Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h1>
-                <p>
-                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com<span>|</span>
-                    <i class="fa-solid fa-chalkboard-user"></i>Ivan Lourenço Gomes<span>|</span>
+                <h1 @click="openC01 = !openC01, openC02 = false, openC03 = false">Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h1>
+                <a href="https://www.udemy.com/course/desenvolvedor-web-front-end-completo-html-css-javascript-vue-js-e-git/" target="_blank">
+                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com
+                </a><span>|</span><i class="fa-solid fa-chalkboard-user"></i>Ivan Lourenço Gomes<span>|</span>
+                <a href="media/Certificados/Udemy - Desenvolvedor Web Completo (HTML, CSS, Javascript, Vue e Git).pdf" target="_blank">
                     <i class="fa-solid fa-certificate"></i>Certificado
-                </p> 
+                </a>
             </div>
-            <i v-if="!openC01" class="fa-solid fa-plus icon-size" @click="openC01 = !openC01, openC02 = false"></i>
-            <i v-else class="fa-solid fa-minus icon-size" @click="openC01 = !openC01"></i>
         </div><hr>
         
         <!-- PROJETOS CURSO 01 -->
@@ -50,36 +49,55 @@
         </div>
 
         <!-- CURSO 02 -->
-        <div class="container-cours">
+        <div class="container-courses">
             <div class="courses">
-                <h1>Formação Programador Frontend - VueJS</h1>
-                <p>
-                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com<span>|</span>
-                    <i class="fa-solid fa-chalkboard-user"></i>Daniel Lopes<span>|</span>
+                <h1 @click="openC02 = !openC02, openC01 = false, openC03 = false">Formação Programador Frontend - VueJS</h1>
+                <a href="https://www.udemy.com/course/formacao-programador-frontend-vuejs/" target="_blank">
+                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com
+                </a><span>|</span><i class="fa-solid fa-chalkboard-user"></i>Daniel Lopes<span>|</span>
+                <a href="media/Certificados/Udemy - Formação Programador Frontend - VueJS.pdf" target="_blank">
                     <i class="fa-solid fa-certificate"></i>Certificado
-                </p> 
+                </a>
             </div>
-            <i v-if="!openC02" class="fa-solid fa-plus icon-size" @click="openC02 = !openC02, openC01 = false"></i>
-            <i v-else class="fa-solid fa-minus icon-size" @click="openC02 = !openC02"></i>
         </div><hr>
 
         <!-- PROJETOS CURSO 02 -->
         <div v-if="openC02">
             <div class="all-projects">
                 <div v-for="projeto in projetosC02" class="project-00">
-                    <div class="project-content">
-                        <a :href="projeto.link" target="_blank">
-                            <img :src="projeto.print">
-                        </a>
-                        <div class="text-box">
-                            <h2>{{projeto.name}}</h2>
-                            <p>{{projeto.description}}</p>
-                        </div>
-                    </div>
+                    <a :href="projeto.link" target="_blank"><img :src="projeto.print"></a>
+                    <h3>{{projeto.name}}</h3>
+                    <p>{{projeto.description}}</p>
                 </div>
             </div>
         </div>
 
+        <!-- CURSO 03 -->
+        <div class="container-courses">
+            <div class="courses">
+                <h1 @click="openC03 = !openC03, openC01 = false, openC02 = false">Node.js do Zero a Maestria</h1>
+                <a href="https://www.udemy.com/course/nodejs-do-zero-a-maestria-com-diversos-projetos/" target="_blank">
+                    <i class="fa-solid fa-graduation-cap"></i>Udemy.com
+                </a><span>|</span><i class="fa-solid fa-chalkboard-user"></i>Matheus Battisti<span>|</span>
+                *Em andamento
+            </div>
+        </div><hr>
+
+        <!-- PROJETOS CURSO 03 -->
+        <div v-if="openC03">
+            <div class="all-projects">
+                <div v-for="projeto in projetosC02" class="project-00">
+                    <a :href="projeto.link" target="_blank"><img :src="projeto.print"></a>
+                    <h3>{{projeto.name}}</h3>
+                    <p>{{projeto.description}}</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="todos">
+            <i class="fa-solid fa-arrow-right"></i> 
+            <a href="pages/AllProjects/index.html">Todos os Projetos</a>
+        </p>
 
     </main>
 

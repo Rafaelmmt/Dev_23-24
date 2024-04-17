@@ -6,6 +6,7 @@ createApp({
         return {
             openC01: false,
             openC02: false,
+            openC03: false,
 
             projetosC01: [
                 {
