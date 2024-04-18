@@ -18,8 +18,8 @@ createApp({
                 {
                     "print": "media/C01_Prj01.png",
                     "link":"projects/C01_Prj03/index.html",
-                    "name": "Introdução JS",
-                    "description": "Projeto utilizando JavaScript para tornar site dinâmico e interativo.",
+                    "name": "Introdução JavaScript",
+                    "description": "Projeto utilizando JavaScript para tornar um site dinâmico e interativo.",
                 },
                 {
                     "print": "media/C01_Prj02.png",
@@ -37,7 +37,7 @@ createApp({
                     "print": "media/C01_Prj05.png",
                     "link":"https://proj07-vuecli.vercel.app/",
                     "name": "Trivia Game",
-                    "description": "Aplicação utilizando VUE CLI e API para a criação de um jogo de perguntas.",
+                    "description": "Aplicação utilizando VUE CLI e API (opentdb.com) para a criação de um jogo de perguntas.",
                 },
                 {
                     "print": "media/C01_Prj06.png",
@@ -55,10 +55,16 @@ createApp({
 
             projetosC02: [
                 {
-                    "print": "media/08.png",
-                    "link":"pages/AllProjects/index.html",
-                    "name": "Projeto 01 curso02",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel erat purus. Ut nec purus semper, sollicitudin elit eu, laoreet mi. Pellentesque lorem neque, bibendum in malesuada quis, convallis ac metus.",
+                    "print": "media/C02_Prj01.png",
+                    "link":"https://frasesapp.vercel.app/",
+                    "name": "QUASAR - Frases App",
+                    "description": "Projeto utilizando o framework QUASAR para a criação de uma aplicação simples. Ao clicar no ícone uma nova frase é exibida.",
+                },
+                {
+                    "print": "media/C02_Prj02.png",
+                    "link":"https://github.com/Rafaelmmt/cursos2023/tree/main/3.%20Forma%C3%A7%C3%A3o%20programador%20frontend%20-%20VueJS/Proj02",
+                    "name": "QUASAR - Instagram",
+                    "description": "Projeto utilizando o framework QUASAR para replicar o layout e algumas funcionalidades do Instagram.",
                 }
             ]
         }
