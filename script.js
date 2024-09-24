@@ -7,6 +7,7 @@ createApp({
             openC01: false,
             openC02: false,
             openC03: false,
+            openC04: false,
 
             projetosC01: [
                 {
@@ -65,6 +66,15 @@ createApp({
                     "link":"https://github.com/Rafaelmmt/cursos2023/tree/main/3.%20Forma%C3%A7%C3%A3o%20programador%20frontend%20-%20VueJS/Proj02",
                     "name": "QUASAR - Instagram",
                     "description": "Projeto utilizando o framework QUASAR para replicar o layout e algumas funcionalidades do Instagram.",
+                }
+            ],
+
+            projetosC04: [
+                {
+                    "print": "media/C04_Prj01.png",
+                    "link": "",
+                    "name": "Note App",
+                    "description": "Projeto de um aplicativo completo utilizando VUE-JS, composition API, Pinia e Firebase.",
                 }
             ]
         }

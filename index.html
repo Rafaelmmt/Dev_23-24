@@ -27,7 +27,7 @@
         <!-- CURSO 01 -->
         <div class="container-courses">
             <div class="courses">
-                <h1 @click="openC01 = !openC01, openC02 = false, openC03 = false">Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h1>
+                <h1 @click="openC01 = !openC01, openC02 = false, openC03 = false, openC04 = false">Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git</h1>
                 <a href="https://www.udemy.com/course/desenvolvedor-web-front-end-completo-html-css-javascript-vue-js-e-git/" target="_blank">
                     <i class="fa-solid fa-graduation-cap"></i>Udemy.com
                 </a><span>|</span><i class="fa-solid fa-chalkboard-user"></i>Ivan Lourenço Gomes<span>|</span>
@@ -51,7 +51,7 @@
         <!-- CURSO 02 -->
         <div class="container-courses">
             <div class="courses">
-                <h1 @click="openC02 = !openC02, openC01 = false, openC03 = false">Formação Programador Frontend - VueJS</h1>
+                <h1 @click="openC02 = !openC02, openC01 = false, openC03 = false, openC04 = false">Formação Programador Frontend - VueJS</h1>
                 <a href="https://www.udemy.com/course/formacao-programador-frontend-vuejs/" target="_blank">
                     <i class="fa-solid fa-graduation-cap"></i>Udemy.com
                 </a><span>|</span><i class="fa-solid fa-chalkboard-user"></i>Daniel Lopes<span>|</span>
@@ -75,7 +75,7 @@
         <!-- CURSO 03 -->
         <div class="container-courses">
             <div class="courses">
-                <h1 @click="openC03 = !openC03, openC01 = false, openC02 = false">Node.js do Zero a Maestria</h1>
+                <h1 @click="openC03 = !openC03, openC01 = false, openC02 = false, openC04 = false">Node.js do Zero a Maestria</h1>
                 <a href="https://www.udemy.com/course/nodejs-do-zero-a-maestria-com-diversos-projetos/" target="_blank">
                     <i class="fa-solid fa-graduation-cap"></i>Udemy.com
                 </a><span>|</span><i class="fa-solid fa-chalkboard-user"></i>Matheus Battisti<span>|</span>
@@ -88,6 +88,28 @@
             <h3>*** Curso em andamento ***</h3>
         </div>
 
+        <!-- CURSO 04 -->
+        <div class="container-courses">
+            <div class="courses">
+                <h1 @click="openC04 = !openC04, openC01 = false, openC02=false, openC03 = false">Vue JS 3: Composition API (with Pinia, Firebase 9 & Vite)</h1>
+                <a href="https://www.udemy.com/course/vue-js-3-composition-api/" target="_blank"><i class="fa-solid fa-graduation-cap"></i>Udemy.com</a>
+                <span>|</span><i class="fa-solid fa-chalkboard-user"></i>Danny Connell<span>|</span>
+                <a href="media/Certificados/Udemy - Vue JS 3 (Composition API).pdf" target="_blank"><i class="fa-solid fa-certificate"></i>Certificado</a>
+            </div>
+        </div><hr>
+
+        <!-- PROJETOS CURSO 04 -->
+        <div v-if="openC04">
+            <div class="all-projects">
+                <div v-for="projeto in projetosC04" class="project-00">
+                    <a :href="projeto.link" target="_blank"><img :src="projeto.print"></a>
+                    <h3>{{projeto.name}}</h3>
+                    <p>{{projeto.description}}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TODOS OS CURSOS -->
         <p class="todos">
             <i class="fa-solid fa-arrow-right"></i> 
             <a href="pages/AllProjects/index.html">Todos os Projetos</a>
